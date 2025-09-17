@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Report Summarizer</title>
+</head>
+<body>
+    <h1>Flask is Working 🎉</h1>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if result %}
+        <h2>Result for {{ filename }}</h2>
+        <pre>{{ result | tojson(indent=2) }}</pre>
+    {% endif %}
+</body>
+</html>

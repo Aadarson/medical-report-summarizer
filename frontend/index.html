@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Report Summarizer</title>
+  <link rel="stylesheet" href="/static/style.css?v=1.2">
+</head>
+<body>
+  <h1>Medical Report Summarizer</h1>
+
+  <div class="card">
+    <label>Upload medical report (PDF / Image):</label>
+    <input id="fileInput" type="file" accept=".pdf, image/*">
+    <button id="uploadBtn">Upload & Summarize</button>
+
+    <h2>Raw Extracted Text</h2>
+    <pre id="raw"></pre>
+
+    <h2>Interpreted Values</h2>
+    <div id="values" class="test-results"></div>
+
+    <h2>Summary</h2>
+    <div id="summary"></div>
+  </div>
+
+  <script src="/static/app.js?v=1.2"></script>
+</body>
+</html>
